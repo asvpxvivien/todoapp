@@ -38,7 +38,7 @@ class _MainscreenState extends State<Mainscreen> {
           ),
         ],
       ),
-      body: Container(),
+      body: Container(child: Text("Add a simple todo task")),
     );
   }
 }
