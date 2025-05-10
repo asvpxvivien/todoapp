@@ -20,7 +20,6 @@ class _AddtodoState extends State<Addtodo> {
           controller: todoText,
           decoration: InputDecoration(
             hintText: "Write your todo task here....",
-            labelText: "Username",
           ),
         ),
         ElevatedButton(
