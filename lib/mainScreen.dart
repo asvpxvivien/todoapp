@@ -11,9 +11,9 @@ class Mainscreen extends StatefulWidget {
 
 class _MainscreenState extends State<Mainscreen> {
   String text = "Add a simple todo task";
-  void changeText() {
+  void changeText({required String todoText}) {
     setState(() {
-      text = " Hello word";
+      text = " $todoText";
     });
   }
 
