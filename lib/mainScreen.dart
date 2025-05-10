@@ -30,10 +30,13 @@ class _MainscreenState extends State<Mainscreen> {
               showModalBottomSheet(
                 context: context,
                 builder: (context) {
-                  return Container(
-                    padding: EdgeInsets.all(20),
-                    height: 200,
-                    child: Addtodo(changeText: changeText),
+                  return Padding(
+                    padding: MediaQuery.of(context).viewInsets,
+                    child: Container(
+                      padding: EdgeInsets.all(20),
+                      height: 200,
+                      child: Addtodo(changeText: changeText),
+                    ),
                   );
                 },
               );
