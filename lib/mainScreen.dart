@@ -26,6 +26,8 @@ class _MainscreenState extends State<Mainscreen> {
           return AlertDialog(
             title: Text("Already exists"),
             content: Text("This todo data already exists"),
+
+            actions: [Text("Close")],
           );
         },
       );
