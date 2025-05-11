@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:todoapp/addTodo.dart';
 import 'package:todoapp/widgets/todoList.dart';
-// import 'package:flutter_feather_icons/flutter_feather_icons.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Mainscreen extends StatefulWidget {
   const Mainscreen({super.key});
@@ -58,8 +58,8 @@ class _MainscreenState extends State<Mainscreen> {
 
   @override
   void initState() {
-    loadData(); // Chargement des données sauvegardées
     super.initState();
+    loadData(); // Chargement des données sauvegardées
   }
 
   void showAddTodoBouttonSheet() {
@@ -99,9 +99,25 @@ class _MainscreenState extends State<Mainscreen> {
               ),
             ),
             ListTile(
+              onTap: () {
+                launchUrl(Uri.parse("https://github.com/asvpxvivien"));
+              },
+
               leading: Icon(Icons.person),
               title: Text(
                 "About Me",
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+            ),
+
+            ListTile(
+              onTap: () {
+                launchUrl(Uri.parse("mailto: example@gmail.com"));
+              },
+
+              leading: Icon(Icons.email),
+              title: Text(
+                "Contact me",
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
             ),
