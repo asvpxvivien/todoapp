@@ -17,6 +17,7 @@ class _AddtodoState extends State<Addtodo> {
       children: [
         Text("Add todo: "),
         TextField(
+          autofocus: true,
           controller: todoText,
           decoration: InputDecoration(
             hintText: "Write your todo task here....",
@@ -24,9 +25,9 @@ class _AddtodoState extends State<Addtodo> {
         ),
         ElevatedButton(
           onPressed: () {
-            print(todoText.text);
-
-            widget.addTodo(todoText: todoText.text);
+            if (todoText.text.isNotEmpty) {
+              widget.addTodo(todoText: todoText.text);
+            }
             todoText.text = "";
           },
           child: Text("Add"),

@@ -11,7 +11,6 @@ class Mainscreen extends StatefulWidget {
 }
 
 class _MainscreenState extends State<Mainscreen> {
-  String text = "Add a simple todo task";
   List<String> todoList = [];
   @override
   void initState() {
@@ -20,7 +19,19 @@ class _MainscreenState extends State<Mainscreen> {
   }
 
   void addTodo({required String todoText}) {
-    if (todoText.trim().isEmpty) return;
+    if (todoList.contains(todoText)) {
+      showDialog(
+        context: context,
+        builder: (context) {
+          return AlertDialog(
+            title: Text("Already exists"),
+            content: Text("This todo data already exists"),
+          );
+        },
+      );
+
+      return;
+    }
     setState(() {
       todoList.insert(0, todoText);
     });
