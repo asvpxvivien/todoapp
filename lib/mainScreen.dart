@@ -98,7 +98,13 @@ class _MainscreenState extends State<Mainscreen> {
                 ),
               ),
             ),
-            ListTile(title: Text("About Me")),
+            ListTile(
+              leading: Icon(Icons.person),
+              title: Text(
+                "About Me",
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+            ),
           ],
         ),
       ),
