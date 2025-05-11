@@ -27,7 +27,14 @@ class _MainscreenState extends State<Mainscreen> {
             title: Text("Already exists"),
             content: Text("This todo data already exists"),
 
-            actions: [Text("Close")],
+            actions: [
+              InkWell(
+                onTap: () {
+                  Navigator.pop(context);
+                },
+                child: Text("Close"),
+              ),
+            ],
           );
         },
       );
