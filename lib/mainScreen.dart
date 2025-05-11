@@ -13,8 +13,14 @@ class Mainscreen extends StatefulWidget {
 class _MainscreenState extends State<Mainscreen> {
   String text = "Add a simple todo task";
   List<String> todoList = [];
+  @override
+  void initState() {
+    super.initState();
+    loadData(); // Chargement des données sauvegardées
+  }
 
   void addTodo({required String todoText}) {
+    if (todoText.trim().isEmpty) return;
     setState(() {
       todoList.insert(0, todoText);
     });
