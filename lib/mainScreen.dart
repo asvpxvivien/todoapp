@@ -82,7 +82,7 @@ class _MainscreenState extends State<Mainscreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.blueGrey[900],
+        backgroundColor: Colors.blue,
         child: Icon(Icons.add, color: Colors.white),
 
         onPressed: showAddTodoBouttonSheet,
@@ -92,7 +92,7 @@ class _MainscreenState extends State<Mainscreen> {
         child: Column(
           children: [
             Container(
-              color: Colors.blueGrey[900],
+              color: Colors.blue,
               height: 200,
               width: double.infinity,
               child: Center(

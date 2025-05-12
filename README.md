@@ -1,16 +1,63 @@
-# todoapp
 
-A new Flutter project.
+# 📋 Modern Flutter Todo App
 
-## Getting Started
+A clean and modern Todo app built with Flutter using Material You design. It supports dark/light mode, persistent storage, and intuitive UI/UX.
 
-This project is a starting point for a Flutter application.
+## ✨ Features
 
-A few resources to get you started if this is your first Flutter project:
+- 📱 Responsive layout with Material 3 (Material You)
+- 🌓 Dark & Light mode support
+- 💾 Persistent data with `SharedPreferences`
+- 🧾 Dynamic task management
+- 📥 Modal bottom sheet for adding tasks
+- 🧑‍💻 Navigation drawer for GitHub and contact
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 📸 Screenshots (video preview)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+https://user-images.githubusercontent.com/your-username/your-video-preview.mp4  
+*(replace with actual video URL after upload to GitHub or YouTube)*
+
+## 🚀 Getting Started
+
+1. Clone this repo:
+   ```bash
+   git clone https://github.com/your-username/flutter-todo-modern.git
+   ```
+
+2. Get dependencies:
+   ```bash
+   flutter pub get
+   ```
+
+3. Run the app:
+   ```bash
+   flutter run
+   ```
+
+## 📁 Folder Structure
+
+```
+lib/
+│
+├── main.dart
+├── mainScreen.dart
+├── addTodo.dart
+├── widgets/
+│   └── todoList.dart
+```
+
+## 🔧 Dependencies
+
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+  shared_preferences: ^2.0.15
+  url_launcher: ^6.1.5
+```
+
+## 👤 Author
+
+**Vivien AMAGBEGNON**  
+[GitHub Profile](https://github.com/asvpxvivien)  
+[Email](mailto:example@gmail.com)
