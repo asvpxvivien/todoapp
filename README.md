@@ -15,7 +15,6 @@ A clean and modern Todo app built with Flutter using Material You design. It sup
 ## 📸 Screenshots (video preview)
 
 https://user-images.githubusercontent.com/your-username/your-video-preview.mp4  
-*(replace with actual video URL after upload to GitHub or YouTube)*
 
 ## 🚀 Getting Started
 
