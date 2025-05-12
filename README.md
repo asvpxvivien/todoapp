@@ -14,7 +14,10 @@ A clean and modern Todo app built with Flutter using "Material You design". It s
 
 ##  Screenshots (video preview)
 
-https://github.com/asvpxvivien/todoapp/blob/main/assets/todo_app_screen.gif
+<p align="center">
+  <img src="assets/todo_app_screen.gif" alt="Demo" />
+</p>
+
 
 ##  Getting Started
 
