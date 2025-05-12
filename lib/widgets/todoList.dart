@@ -39,16 +39,18 @@ class _TodoListBuilderState extends State<TodoListBuilder> {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      itemCount: widget.todoList.length,
-      itemBuilder: (BuildContext context, int index) {
-        return ListTile(
-          onTap: () {
-            onItemclicked(index: index);
+    return (widget.todoList.isEmpty)
+        ? Text("No items on your todo list")
+        : ListView.builder(
+          itemCount: widget.todoList.length,
+          itemBuilder: (BuildContext context, int index) {
+            return ListTile(
+              onTap: () {
+                onItemclicked(index: index);
+              },
+              title: Text(widget.todoList[index]),
+            );
           },
-          title: Text(widget.todoList[index]),
         );
-      },
-    );
   }
 }
