@@ -1,9 +1,9 @@
 
-# 📋 Modern Flutter Todo App
+# 📋Todo App
 
-A clean and modern Todo app built with Flutter using Material You design. It supports dark/light mode, persistent storage, and intuitive UI/UX.
+A clean and modern Todo app built with Flutter using "Material You design". It supports dark/light mode, persistent storage, and intuitive UI/UX.
 
-## ✨ Features
+##  Features
 
 -  Responsive layout with Material 3 (Material You)
 -  Dark & Light mode support
@@ -12,11 +12,11 @@ A clean and modern Todo app built with Flutter using Material You design. It sup
 -  Modal bottom sheet for adding tasks
 -  Navigation drawer for GitHub and contact
 
-## 📸 Screenshots (video preview)
+##  Screenshots (video preview)
 
-https://user-images.githubusercontent.com/your-username/your-video-preview.mp4  
+https://github.com/asvpxvivien/todoapp/blob/main/assets/todo_app_screen.gif
 
-## 🚀 Getting Started
+##  Getting Started
 
 1. Clone this repo:
    ```bash
@@ -33,7 +33,7 @@ https://user-images.githubusercontent.com/your-username/your-video-preview.mp4
    flutter run
    ```
 
-## 📁 Folder Structure
+##  Folder Structure
 
 ```
 lib/
@@ -45,7 +45,7 @@ lib/
 │   └── todoList.dart
 ```
 
-## 🔧 Dependencies
+##  Dependencies
 
 ```yaml
 dependencies:
