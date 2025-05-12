@@ -40,15 +40,48 @@ class _TodoListBuilderState extends State<TodoListBuilder> {
   @override
   Widget build(BuildContext context) {
     return (widget.todoList.isEmpty)
-        ? Text("No items on your todo list")
+        ? Center(child: Text("No items on your todo list"))
         : ListView.builder(
           itemCount: widget.todoList.length,
           itemBuilder: (BuildContext context, int index) {
-            return ListTile(
-              onTap: () {
-                onItemclicked(index: index);
+            return Dismissible(
+              key: UniqueKey(),
+              direction: DismissDirection.startToEnd,
+              secondaryBackground: Container(
+                color: Colors.red,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Icon(Icons.delete),
+                    ),
+                  ],
+                ),
+              ),
+              background: Container(
+                color: Colors.green,
+                child: Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Icon(Icons.check),
+                    ),
+                  ],
+                ),
+              ),
+              onDismissed: (direction) {
+                setState(() {
+                  widget.todoList.removeAt(index);
+                });
+                widget.updateLocalData();
               },
-              title: Text(widget.todoList[index]),
+              child: ListTile(
+                onTap: () {
+                  onItemclicked(index: index);
+                },
+                title: Text(widget.todoList[index]),
+              ),
             );
           },
         );
