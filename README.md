@@ -1,7 +1,7 @@
 
 # Todo App
 
-A clean and modern Todo app built with Flutter using "Material You design". It supports dark/light mode, persistent storage, and intuitive UI/UX.
+A clean and modern Todo app built with Flutter. It supports dark/light mode, persistent storage, and intuitive UI/UX.
 
 ##  Features
 
